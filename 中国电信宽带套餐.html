@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国电信宽带套餐选择</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --secondary-color: #d32f2f;
+        }
+        body {
+            background: #f8f9fa;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #0d47a1);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .speed-section { 
+            margin: 2rem 0; 
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .speed-300 { border-left: 4px solid #42a5f5; }
+        .speed-500 { border-left: 4px solid #ab47bc; }
+        .speed-1000 { border-left: 4px solid #ffee58; }
+        .card { 
+            margin: 1rem; 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            background: rgba(255,255,255,0.95);
+        }
+        .card:hover { 
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+        .badge-custom { 
+            background: var(--primary-color); 
+            font-size: 1rem;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+        }
+        .highlight { color: var(--secondary-color); }
+        .price-tag {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .wechat-modal img {
+            width: 280px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center">
+        <h1 class="mb-3">中国电信5G全家享融合套餐</h1>
+        <h5>新装用户预存299元送全屋WiFi大礼包 | 推荐办理得百元红包</h5>
+    </div>
+
+    <div class="container py-4">
+        <!-- 300M宽带 -->
+        <div class="speed-section speed-300 bg-white">
+            <h3><span class="badge badge-custom">300M光纤宽带</span></h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">129元套餐</h4>
+                                <span class="price-tag">¥129</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：30GB</li>
+                                <li class="list-group-item">📞 国内语音：500分钟</li>
+                                <li class="list-group-item">🎁 首付：<span class="highlight">299元</span>（立返199元）</li>
+                                <li class="list-group-item">🎉 专属礼包：健康血压计</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 500M宽带 -->
+        <div class="speed-section speed-500 bg-white">
+            <h3><span class="badge badge-custom">500M光纤宽带</span></h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">169元套餐</h4>
+                                <span class="price-tag">¥169</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：40GB</li>
+                                <li class="list-group-item">📞 国内语音：800分钟</li>
+                                <li class="list-group-item">🎁 首付：<span class="highlight">299元</span>（立返199元）</li>
+                                <li class="list-group-item">🎉 智能礼包：子路由+看家摄像头+智能音箱</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1000M宽带 -->
+        <div class="speed-section speed-1000 bg-white">
+            <h3><span class="badge badge-custom">1000M极速宽带</span></h3>
+            <div class="row">
+                <!-- 199元套餐 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">199元套餐</h4>
+                                <span class="price-tag">¥199</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：60GB</li>
+                                <li class="list-group-item">📞 国内语音：1000分钟</li>
+                                <li class="list-group-item">💳 充值优惠：充400享1200元</li>
+                                <li class="list-group-item">🎉 智能礼包：子路由+看家+中屏音箱</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 239元套餐 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">239元套餐</h4>
+                                <span class="price-tag">¥239</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：80GB</li>
+                                <li class="list-group-item">📞 国内语音：1000分钟</li>
+                                <li class="list-group-item">💳 充值优惠：充400享1200元</li>
+                                <li class="list-group-item">🎉 尊享礼包：中屏音箱+4K影视全家桶</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 299元套餐 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">299元套餐</h4>
+                                <span class="price-tag">¥299</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：100GB</li>
+                                <li class="list-group-item">📞 国内语音：1500分钟</li>
+                                <li class="list-group-item">💳 充值优惠：充400享1200元</li>
+                                <li class="list-group-item">🎉 尊享礼包：4K影视全家桶+智能看家</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 399元套餐 -->
+                <div class="col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">399元套餐</h4>
+                                <span class="price-tag">¥399</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">📱 国内流量：150GB</li>
+                                <li class="list-group-item">📞 国内语音：2000分钟</li>
+                                <li class="list-group-item">💳 充值优惠：充400享1200元</li>
+                                <li class="list-group-item">🎉 旗舰礼包：全屋智能四件套</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 mt-3" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                                立即办理
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 微信模态框 -->
+        <div class="modal fade" id="wechatModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">扫码联系专属客服</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <div class="wechat-modal">
+                            <img src="WeChat-qrcode.png" alt="微信二维码" class="mb-3">
+                            <p class="text-muted">电信客服小吴 133-5757-6667</p>
+                            <p class="text-success">扫码添加微信立即办理套餐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
